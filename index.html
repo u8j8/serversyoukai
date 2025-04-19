@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サーバーホームページ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://example.com/background-image.jpg'); /* 背景画像 */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        header {
+            background-color: rgba(114, 137, 218, 0.8);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            border: 5px solid #444444;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+        .server-link {
+            display: flex; /* 横並びにする */
+            justify-content: center; /* 中央に配置 */
+            gap: 20px; /* ボタン間のスペースを設定 */
+            margin-top: 30px;
+        }
+        .server-link a, .server-link button {
+            text-decoration: none;
+            background-color: #00b0f4;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            border: none;
+            cursor: pointer;
+        }
+        .server-link button {
+            background-color: #7289da; /* Discordに近い色 */
+        }
+        .server-intro {
+            display: none; /* 最初は非表示 */
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin-top: 20px;
+            border: 2px solid #444444;
+            border-radius: 10px;
+        }
+        .server-intro h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        .server-intro p {
+            font-size: 1rem;
+            color: #333333;
+        }
+    </style>
+    <script>
+        // サーバー紹介を表示するための関数
+        function showServerIntro() {
+            var intro = document.getElementById('server-intro');
+            intro.style.display = 'block'; // 表示
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    雑談鯖(元ポケモンサバイバル鯖)
+</header>
+
+<div class="server-link">
+    <a href="https://discord.gg/X927ZtdbC9">サーバーに参加！</a>
+    <button onclick="showServerIntro()">サーバー紹介を見る</button>
+</div>
+
+<!-- サーバー紹介セクション -->
+<div id="server-intro" class="server-intro">
+    <h2>サーバー紹介</h2>
+    <p>
+        オーナー:とわ(別名性欲大魔王)
+    </p>
+</div>
+
+</body>
+</html>
